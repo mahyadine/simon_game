@@ -10,6 +10,8 @@ class Player ():
             print("Merci de rentrer un nom valide ")
             name = input("Veuillez entrer votre nom pour jouer :")
         self.name = name
+        print (" Bonjour {} je vous souhaite bonne chance".format(name))
+        print (" Le jeu va commencer ")
 
     def checkstart(self, name):
         try:
