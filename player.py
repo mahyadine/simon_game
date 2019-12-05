@@ -14,7 +14,7 @@ class Player ():
         print (" Le jeu va commencer ")
 
     def checkstart(self, name):
-        try:
-            assert len(name) > 1 and len(name) < 15
-        except AssertionError as a:
+        if len(name) > 1 and len(name) < 15:
+            return True
+        else:
             return False

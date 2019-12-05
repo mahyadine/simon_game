@@ -1,11 +1,14 @@
 from random import *
+import time
+import os 
+
 
 class Sequence():
 
     def __init__(self):
-        self.computer = None
+        self.numbers = [12, 5, 56, 34]
 
-    def number(self):
-        computer = randint (1,50)
-        self.computer = computer
-        print (computer)
+
+    def add_random_number(self):
+        number = randint (1,10)
+        self.numbers.append(number)
